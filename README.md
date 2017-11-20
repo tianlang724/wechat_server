@@ -51,9 +51,9 @@
 
 git目录下有两个主要的工程文件
 
-/wechatserver: [微信服务器](/wechatserver/README.md)
+/wechatserver: [微信服务器](/wechatserver)
 
-/schoolbotapi: [爬虫服务器](/schoolbotapi/README.md)
+/schoolbotapi: [爬虫服务器](/schoolbotapi)
 
 
 
