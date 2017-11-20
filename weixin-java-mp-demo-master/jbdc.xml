@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <!-- 驱动包名 -->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <!-- 数据库地址 -->
+        <property name="url" value="jdbc:mysql://localhost:3306/school?useUnicode=true&amp;characterEncoding=utf8;" />
+        <!-- 用户名 -->
+        <property name="username" value="root" />
+        <!-- 密码 -->
+        <property name="password" value="root" />
+        <!-- 最大连接数量 -->
+        <property name="maxActive" value="150" />
+        <!-- 最小空闲连接  -->
+        <property name="minIdle" value="5" />
+        <!-- 最大空闲连接 -->
+        <property name="maxIdle" value="20" />
+        <!-- 初始化连接数量 -->
+        <property name="initialSize" value="30" />
+        <!-- 连接被泄露时是否打印 -->
+        <property name="logAbandoned" value="true" />
+        <!-- 是否自动回收超时连接 -->
+        <property name="removeAbandoned" value="true" />
+        <!-- 超时等待时间(以秒为单位) -->
+        <property name="removeAbandonedTimeout" value="10" />
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="studentManager" class="com.xrq.jdbc.StudentManager" factory-method="getInstance">
+        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+</beans>

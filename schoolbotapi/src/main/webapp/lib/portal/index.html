@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>MAP</title>
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<!-- -->
+<body>
+<div class="row">
+    <form  name="loginForm"  action="/schoolbotapi/rest/auth/lib" method="post" onsubmit="return validateForm(this)" id="log_in">
+        <div class="form-group">
+            <div class="row row_margin">
+                <lable for="username">
+                    图书馆用户名
+                </lable>
+            </div>
+            <div class="row row_margin" id="username">
+                <input name="username" type="text" class="form-control" placeholder="username">
+            </div>
+            <div class="row row_margin">
+                <lable for="password">
+                    图书馆用户密码
+                </lable>
+            </div>
+            <div class="row row_margin" id="password">
+                <input name="password" type="password" class="form-control" placeholder="password">
+            </div>
+
+            <input type='hidden' id="m_password" name='m_password'/>
+
+            <div id="alert_box" class="alert row_margin">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning!</strong> <i id="alert_text"></i>
+            </div>
+            <div class="btn_pos row row_margin">
+                <button  type="submit" value="submit" class="btn btn_color">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>log In</button>
+            </div>
+            <input type="hidden" id="user_token" name="usertoken">
+
+        </div>
+    </form>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="md5.js"></script>
+<script type="text/javascript" src="form_action.js"></script>
+<script src="log.js"></script>
+</html>

@@ -1,0 +1,41 @@
+body {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #417690;
+}
+
+#log_in{
+    margin-top: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 90%;
+    height: 50vh;
+    background-color: white;
+    padding: 30px 40px 30px 40px;
+
+}
+
+
+.row_margin{
+    margin-top: 10px;
+}
+
+#alert_box {
+    display: none;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    background-color: #cc423c;
+}
+
+.btn_pos {
+    text-align: right;
+}
+
+.btn_color {
+    background-color: #417690;
+    color: white;
+}
