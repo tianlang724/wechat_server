@@ -61,7 +61,7 @@ Spring MVC是Spring框架最重要的的模块之一。Spring 框架提供了构
 
 ![](https://img.shields.io/badge/deficiency-unmet-red.svg)LUIS语义识别智能程度不够高，不能做到完全
 
-## 下一步方向:eyes:
+## 下一步方向 :eyes:
 
 - 完善LUIS，增加更多的语义识别，实现更多查询功能，提高语义识别的智能化成都
 - 优化对数据库的访问，减少访问时间，加快相应速度。

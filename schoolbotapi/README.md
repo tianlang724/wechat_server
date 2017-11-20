@@ -14,7 +14,7 @@
 
 本爬虫后台为 **Crawler** 实体。负责从学校官网模拟登陆抓取信息。同时 **Crawler** 将爬虫抓取的信息存至 :cloud:**MySQL**服务器。与 **Wechat后台** 之间使用 **REST接口** 交互。
 
-![电小科](../resources电小科.png)
+![电小科](../resources/电小科.png)
 
 **Crawler** 使用 **Java** 作为编程语言，结合 **Jersey** 框架，是一个轻量级的 **REST** 服务器。目前的运行方式是托管在 **ISP** 的 **Tomcat** 服务器上。
 
