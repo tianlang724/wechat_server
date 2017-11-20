@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="uestc" />
         <module name="weixin-java-mp-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="uestc" target="1.8" />
       <module name="weixin-java-mp-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

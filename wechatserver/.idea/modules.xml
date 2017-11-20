@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/uestc.iml" filepath="$PROJECT_DIR$/uestc.iml" />
       <module fileurl="file://$PROJECT_DIR$/weixin-java-mp-demo.iml" filepath="$PROJECT_DIR$/weixin-java-mp-demo.iml" />
     </modules>
   </component>
