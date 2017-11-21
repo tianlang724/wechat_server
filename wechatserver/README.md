@@ -47,7 +47,7 @@ Spring MVC是Spring框架最重要的的模块之一。Spring 框架提供了构
 
 ## 目前进展:triangular_flag_on_post:
 
-![](https://img.shields.io/badge/progress-100-brightgreen.svg)支持一卡通消费情况查询（余额、消费流水、充值情况）
+![](https://img.shields.io/badge/progress-100-brightgreen.svg)支持一卡通消费情况查询（余额、消费流水、充值情况）,其中消费流水和充值情况支持基于时间的查询，可以指定昨天，今天这样的模糊日期，也可以指定十一月二十八日这样的确定日期
 
 ![](https://img.shields.io/badge/progress-100-brightgreen.svg)支持一卡通消费情况更新（余额、消费流水、充值情况）
 
@@ -63,5 +63,5 @@ Spring MVC是Spring框架最重要的的模块之一。Spring 框架提供了构
 
 ## 下一步方向 :eyes:
 
-- 完善LUIS，增加更多的语义识别，实现更多查询功能，提高语义识别的智能化成都
+- 完善LUIS，增加更多的语义识别，实现更多查询功能，提高语义识别的智能化程度
 - 优化对数据库的访问，减少访问时间，加快相应速度。
