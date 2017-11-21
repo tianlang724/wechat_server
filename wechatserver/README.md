@@ -59,7 +59,7 @@ Spring MVC是Spring框架最重要的的模块之一。Spring 框架提供了构
 
 ![](https://img.shields.io/badge/deficiency-unmet-red.svg)当前只支持微信文字查询，不支持图片请求以及语音业务
 
-![](https://img.shields.io/badge/deficiency-unmet-red.svg)LUIS语义识别智能程度不够高，不能做到完全
+![](https://img.shields.io/badge/deficiency-unmet-red.svg)LUIS语义识别智能程度不够高
 
 ## 下一步方向 :eyes:
 
